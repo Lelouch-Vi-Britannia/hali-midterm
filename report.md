@@ -1,5 +1,5 @@
 # First Sight
-One of the key challenges of this task is the inconsistency in user ratings. Numerous factors—such as mood, personal experiences, and even external events—can significantly influence how users rate a movie, making it difficult for the model to achieve very high accuracy in its predictions.
+One of the key challenges of this task is the inconsistency in user ratings. Numerous factors—such as mood, personal experiences, and even random external events—can significantly influence how users rate a movie, making it difficult for the model to achieve very high accuracy in its predictions.
 
 # Data Analysis
 Upon analyzing the provided dataset, I found it to be highly imbalanced. Over 50% of the reviews have a 5-star rating, around 20% have a 4-star rating, approximately 10% have a 3-star rating, and 1-star and 2-star ratings each account for roughly 5% of the dataset. This imbalance poses a significant challenge, as the model may become biased toward predicting the majority class. To address this issue, techniques such as oversampling, undersampling, or weighting classes may be necessary to improve model performance across all rating categories.
