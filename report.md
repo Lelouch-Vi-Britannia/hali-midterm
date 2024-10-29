@@ -51,7 +51,7 @@ The highest score I achieved was 68.5% accuracy locally, but it dropped to 66.4%
 Contrary to my expectations, TF-IDF did not consistently highlight the words most crucial for classification. While some top-rated words like "great," "fantastic," and "terrible" were useful in indicating sentiment, other frequent words like "movie" and "film" added noise to the model as they are generic nouns. This outcome is understandable, given that the dataset consists of movie reviews, and such generic terms do not meaningfully differentiate between sentiments. Addressing this issue will be a priority in future iterations, focusing on techniques to reduce the impact of irrelevant terms, such as better stopword filtering or using more sophisticated feature selection.
 
 ## Feature Importance
-In subsequent experiments, I only used features helpfulness, summary length, text length, and TF-IDF-processed text, as there was a sign of overfitting and I initially misunderstood the guidelines regarding the use of score-related features.
+In subsequent experiments, I only used feature: helpfulness, summary length, text length, and TF-IDF-processed text, as there was a sign of overfitting and I initially misunderstood the guidelines regarding the use of score-related features.
 
 To determine feature importance, I followed GPT's suggestion to generate feature importance scores for each feature. This involved training the model with the complete set of TF-IDF features, calculating the average absolute value of the coefficients from the trained **LinearSVC**, and mapping these coefficients to their respective features to rank their importance. Interestingly, this method effectively distinguished emotionally charged words from generic ones.
 
